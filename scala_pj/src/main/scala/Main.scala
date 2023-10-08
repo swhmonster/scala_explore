@@ -1,3 +1,5 @@
+import classes.{Cat, Dog}
+
 import scala.io.StdIn.readLine
 
 @main def m() =
@@ -12,3 +14,11 @@ import scala.io.StdIn.readLine
 
   val ints = List(1, 2, 3, 4, 5)
   for i <- ints do println(i)
+
+  val d = Dog("Rover")
+  println(d.speak()) // prints "Woof!"
+
+  val c = Cat("Morris")
+  println(c.speak()) // "Meow"
+  c.startRunning() // "Yeah ... I don’t run"
+  c.stopRunning()
